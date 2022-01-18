@@ -1,16 +1,8 @@
 workflow:
   steps:
-    - link_package:
+    - branch_package:
         source_project: home:Admin
         source_package: hello_world
         target_project: test-project
-    - configure_repositories:
-        project: test-project
-        repositories:
-          - name: openSUSE_Tumbleweed_test
-            target_project: home:Admin
-            target_repository: openSUSE_Tumbleweed
-            architectures:
-              - x86_64
   filters:
     event: pull_request
