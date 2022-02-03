@@ -1,11 +1,11 @@
 workflow:
   steps:
     - set_flags:
-      flags:
-        - type: build
-          status: disable
-          project: home:Admin
-          architecture: i586
-          repository: openSUSE_Tumbleweed
+        flags:
+          - type: build
+            status: disable
+            project: home:Admin
+            architecture: i586
+            repository: openSUSE_Tumbleweed
   filters:
     event: pull_request
