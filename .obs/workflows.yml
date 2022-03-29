@@ -2,4 +2,4 @@ workflow:
   steps:
     - trigger_services:
         project: home:Admin
-        package: hello
+        package: hello_world
