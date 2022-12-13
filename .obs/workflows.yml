@@ -1,7 +1,8 @@
 tag_workflow:                                                                                                                                                                                                                                  
   steps:                                                                                                                                                                                                                                           
-    - trigger_services:                                                                                                                                                                                                                            
+    - branch_package:                                                                                                                                                                                                                            
         project: home:krauselukas
         package: hello_world
+        target_project: home:krauselukas:test
   filters:                                                                                                                                                                                                                                         
     event: tag_push
