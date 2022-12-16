@@ -4,5 +4,10 @@ workflow:
         source_project: home:krauselukas
         source_package: hello_world
         target_project: home:krauselukas:foo
+    - set_flags:
+        flags:
+          - type: publish
+            status: enable
+            project: home:krauselukas:foo
   filters:                                                                                                                                                                                                                                         
     event: pull_request
