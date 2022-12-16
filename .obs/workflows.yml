@@ -1,8 +1,8 @@
-tag_workflow:                                                                                                                                                                                                                                  
+workflow:                                                                                                                                                                                                                                  
   steps:                                                                                                                                                                                                                                           
     - branch_package:                                                                                                                                                                                                                            
         source_project: home:krauselukas
         source_package: hello_world
-        target_project: home:krauselukas:test
+        target_project: home:krauselukas:foo
   filters:                                                                                                                                                                                                                                         
-    event: tag_push
+    event: pull_request
