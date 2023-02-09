@@ -1,13 +1,7 @@
 workflow:                                                                                                                                                                                                                                  
   steps:                                                                                                                                                                                                                                           
-    - branch_package:                                                                                                                                                                                                                            
-        source_project: home:krauselukas
-        source_package: hello_world
-        target_project: home:krauselukas:foo
-    - set_flags:
-        flags:
-          - type: publish
-            status: enable
-            project: home:krauselukas:foo
+    - trigger_services:                                                                                                                                                                                                                            
+        project: home:krauselukas
+        package: hello_world
   filters:                                                                                                                                                                                                                                         
-    event: pull_request
+    event: tag_push
