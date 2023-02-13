@@ -4,4 +4,7 @@ workflow:
         project: home:Admin
         package: hello_world
   filters:
+    branches:
+      only:
+        - test_branch
     event: tag_push
