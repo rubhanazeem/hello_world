@@ -3,8 +3,3 @@ workflow:
     - trigger_services:                                                                                                                                                                                                                            
         project: home:Admin
         package: hello_world
-  filters:
-    branches:
-      only:
-        - test_branch
-    event: tag_push
