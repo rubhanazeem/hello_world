@@ -1,7 +1,5 @@
 workflow:                                                                                                                                                                                                                                  
   steps:                                                                                                                                                                                                                                           
     - branch_package:                                                                                                                                                                                                                            
-        source_project: home:Admin
+        source_project: home:rubhanazeem
         source_package: hello_world
-        target_project: test
-        
