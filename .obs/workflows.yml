@@ -1,6 +1,9 @@
 workflow:                                                                                                                                                                                                                                  
   steps:                                                                                                                                                                                                                                           
-    - branch_package:                                                                                                                                                                                                                            
-        source_project: home:rubhanazeem # The name of the project that contains the package
-        source_package: hello_world # The name of the package you want to build
-        target_project: home:rubhanazeem # The name of the project that will contain the branched package
+    - rebuild_package:
+        project: home:rubhanazeem
+        package: hello_world
+    - link_package:
+        source_project: home:rubhanazeem
+        source_package: hello_world
+        target_project: home:rubhanazeem
