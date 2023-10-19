@@ -1,6 +1,16 @@
 workflow:                                                                                                                                                                                                                                  
   steps:                                                                                                                                                                                                                                           
-    - link_package:
-        source_project: home:rubhanazeem
-        source_package: hello_world
-        target_project: home:rubhanazeem
+    - set_flags:
+        flags:
+          - type: build
+            status: enable
+            project: home:Admin
+          - type: publish
+            status: disable
+            project: home:Admin
+          - type: build
+            status: disable
+            project: home:Admin
+            package: hello_world
+            repository: openSUSE_Tumbleweed
+            architecture: x86_64
