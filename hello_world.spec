@@ -24,4 +24,4 @@ install -m 755 hello_world.sh %{buildroot}/usr/bin/hello_world.sh
 /usr/bin/hello_world.sh
 
 %changelog
-# let skip this for now
+
