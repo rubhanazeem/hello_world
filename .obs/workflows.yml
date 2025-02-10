@@ -6,4 +6,5 @@ workflow:
         target_project: home:Admin
   filters:
     event: pull_request
-    labels: duplicate
+    labels:
+      - duplicate
