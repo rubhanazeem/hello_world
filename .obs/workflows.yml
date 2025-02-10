@@ -4,3 +4,6 @@ workflow:
         source_project: home:Iggy
         source_package: hello_world_iggy
         target_project: home:Admin
+  filters:
+    event: pull_request
+    labels: duplicate
