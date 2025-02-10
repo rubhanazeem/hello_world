@@ -7,4 +7,5 @@ workflow:
   filters:
     event: pull_request
     labels:
-      - duplicate
+      only:
+        - duplicate
