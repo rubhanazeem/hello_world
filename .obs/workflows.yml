@@ -4,12 +4,14 @@ workflow:
         source_project: home:Iggy
         source_package: hello_world_iggy
         target_project: home:Admin
-    - rebuild_package:
-        project: home:Admin
-        package: cloc
-    - rebuild_package:
-        project: home:Admin
-        package: hello_world
+    - set_flags:
+        flags:
+          - type: build
+            status: disable
+            project: home:Admin
+            package: hello_world
+            repository: 15.5
+            architecture: x86_64
   filters:
     event: pull_request
     labels:
