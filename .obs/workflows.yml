@@ -4,7 +4,7 @@ testbuild:
     - branch_package:
         source_project: home:Admin
         source_package: hello_world
-        target_project: home:Admin
+        target_project: home:Iggy
   filters:
     event: pull_request
     labels:
