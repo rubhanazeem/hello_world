@@ -7,6 +7,9 @@ workflow:
     - rebuild_package:
         project: home:Admin
         package: cloc
+    - rebuild_package:
+        project: home:Admin
+        package: hello_world
   filters:
     event: pull_request
     labels:
