@@ -10,7 +10,7 @@ workflow:
             status: disable
             project: home:Admin
             package: hello_world
-            repository: 15.5
+            repository: openSUSE_Tumbleweed
             architecture: x86_64
   filters:
     event: pull_request
