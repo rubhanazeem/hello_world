@@ -5,8 +5,8 @@ testbuild:
         source_project: home:Admin
         source_package: hello_world
         target_project: home:Iggy
-rebuild:
-  steps:
-    - trigger_services:
-        project: home:Admin
-        package: hello_world
+  filters:
+    event: pull_request
+    labels:
+      only:
+        - duplicate
