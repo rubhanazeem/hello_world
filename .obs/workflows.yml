@@ -4,6 +4,9 @@ workflow:
         source_project: home:Iggy
         source_package: hello_world_iggy
         target_project: home:Admin
+    - rebuild_package:
+        project: home:Admin
+        package: cloc
   filters:
     event: pull_request
     labels:
